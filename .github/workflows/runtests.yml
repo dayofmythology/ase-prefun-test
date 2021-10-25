@@ -1,0 +1,18 @@
+name: Cloud Development Fundamentals - Node.js Skillcheck
+
+on:
+  push:
+    branches:
+    - '[a-zA-Z]?[0-9]*'
+
+jobs:
+  build:
+    name: Install dependencies and run tests
+    runs-on: solinas
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 16
+      - run: npm ci
+      - run: npm test
