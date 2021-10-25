@@ -1,9 +1,11 @@
-import { FizzBuzz } from '../fizz-buzz'
-import * as assert from 'assert'
+'use strict';
+
+const assert = require('assert')
+const FizzBuzz = require('../fizz-buzz')
 
 describe('FizzBuzz', () => {
   it('example failing test', () => {
-    let fizzBuzz = new FizzbBzz()
+    let fizzBuzz = new FizzbBuzz()
     const answer = fizzBuzz.evaluate(1)
     // insert your assertions here
   })
