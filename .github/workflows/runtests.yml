@@ -19,15 +19,14 @@ jobs:
         with:
           path: main
       
-      ### Checkout the Participants Branch of this Repository (e.g. d067687) into subfolder main
+      ### Checkout our helper repository ("skillcheck-internal") into folder with same name
       - name: Check out "skillcheck-internal" repo
         uses: actions/checkout@v2
         with:
           path: skillcheck-internal
           repository: cloud-curriculum/skillcheck-internal
           token: ${{ secrets.PAT }}
-        
-        
+           
       ### Checkout out the smoketests branch from our helper repository ("skillcheck-internal") into the smoketests folder
       - name: Check out Smoketests
         uses: actions/checkout@v2
@@ -63,7 +62,8 @@ jobs:
       ### Run tests to verify the participants solution
       - name: Run smoke tests
         run: |
-          cp main/fizz-buzz.js smoketests/
+          cp main/lib/* smoketests/lib
+          cp main/api/* smoketests/api
           cd smoketests
           npm ci
           npm test
@@ -80,6 +80,7 @@ jobs:
           git commit -am "Adding to passed file"
           git push "https://x-access-token:${{ secrets.PAT }}@github.tools.sap/cloud-curriculum/skillcheck-internal.git"
         
+      ### No matter if correct or incorrect always wipe the participants branch after the build to prevent merge conflicts and others peeking on the solution
       - name: Clean Branch
         if: always()
         run: | 
