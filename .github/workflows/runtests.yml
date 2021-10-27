@@ -65,6 +65,18 @@ jobs:
           cd smoketests
           npm ci
           npm test
+          
+        ### If the tests were successful add participant to "passed.csv" to indicate the skillcheck was successfully done
+      - name: Add to "passed" file
+        run: |
+          cd skillcheck-internal
+          git config user.email marcel.dambach@sap.com
+          git config user.name Marcel
+          git checkout main
+          BRANCH=`echo "$GITHUB_REF" | sed 's/refs\/heads\/*//'`
+          echo "$BRANCH,`date +"%d.%m.%Y-%T %Z"`" >> passed.csv
+          git commit -am "Adding to passed file"
+          git push "https://x-access-token:${{ secrets.PAT }}@github.tools.sap/cloud-curriculum/skillcheck-internal.git"
         
       - name: Clean Branch
         if: always()
