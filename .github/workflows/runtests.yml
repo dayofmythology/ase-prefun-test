@@ -7,12 +7,26 @@ on:
 
 jobs:
   build:
-    name: Install dependencies and run tests
+    name: Skillcheck nodejs
     runs-on: solinas
     steps:
-      - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
           node-version: 16
-      - run: npm ci
-      - run: npm test
+      ### Checkout the Participants Branch of this Repository (e.g. d067687) into subfolder main
+      - name: Check out
+        uses: actions/checkout@v2
+        with:
+          path: main
+      
+      ### Checkout the Participants Branch of this Repository (e.g. d067687) into subfolder main
+      - name: Check out "skillcheck-internal" repo
+        uses: actions/checkout@v2
+        with:
+          path: skillcheck-internal
+          repository: cloud-curriculum/skillcheck-internal
+          token: ${{ secrets.PAT }}
+      - name: Install dependencies and run tests
+        run: npm ci && npm test
+
+
