@@ -1,11 +1,9 @@
-'use strict';
+const assert = require('assert/strict')
+const FizzBuzz = require('../lib/fizz-buzz')
 
-const assert = require('assert')
-const FizzBuzz = require('../fizz-buzz')
-
-describe('FizzBuzz', () => {
+describe('fizz-buzz', function () {
   it('example failing test', () => {
-    let fizzBuzz = new FizzbBuzz()
+    const fizzBuzz = new FizzbBuzz()
     const answer = fizzBuzz.evaluate(1)
     // insert your assertions here
   })

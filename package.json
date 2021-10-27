@@ -1,14 +1,14 @@
 {
-  "name": "prerequisites-test",
+  "name": "cdf-nodejs-test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "node node_modules/mocha/bin/mocha --exit"
+    "test": "npx mocha"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Agile & Cloud Development Competence",
+  "license": "SAP SE",
   "devDependencies": {
+    "eslint": "^8.1.0",
     "mocha": "^9.1.3"
   }
 }
