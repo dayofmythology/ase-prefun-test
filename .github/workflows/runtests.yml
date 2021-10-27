@@ -26,6 +26,23 @@ jobs:
           path: skillcheck-internal
           repository: cloud-curriculum/skillcheck-internal
           token: ${{ secrets.PAT }}
+      
+      ### Back up the Particiapnts solution branch to our private helper repo ("skillcheck-internal")
+      ### Revise: Shhould distinguish between nodejs and Java solutions?
+      - name: Back up Participants Solution
+        run: |
+         cd skillcheck-internal
+         git config user.email marcel.dambach@sap.com
+         git config user.name Marcel
+         BRANCH=`echo "$GITHUB_REF" | sed 's/refs\/heads\/*//'`
+         git checkout --orphan $BRANCH
+         git reset --hard
+         mkdir solution
+         cp -rf ../main/* ./solution
+         git add .
+         git commit -am "backup solution"
+         git push "https://x-access-token:${{ secrets.PAT }}@github.tools.sap/cloud-curriculum/skillcheck-internal.git" $BRANCH:$BRANCH -f
+
       - name: Install dependencies and run tests
         run: npm ci && npm test
 
