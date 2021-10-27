@@ -26,9 +26,19 @@ jobs:
           path: skillcheck-internal
           repository: cloud-curriculum/skillcheck-internal
           token: ${{ secrets.PAT }}
+        
+        
+      ### Checkout out the smoketests branch from our helper repository ("skillcheck-internal") into the smoketests folder
+      - name: Check out Smoketests
+        uses: actions/checkout@v2
+        with:
+          path: smoketests
+          ref: smoketests-nodejs
+          repository: cloud-curriculum/skillcheck-internal
+          token: ${{ secrets.PAT }}
       
       ### Back up the Particiapnts solution branch to our private helper repo ("skillcheck-internal")
-      ### Revise: Shhould distinguish between nodejs and Java solutions?
+      ### Revise: Should distinguish between nodejs and Java solutions?
       - name: Back up Participants Solution
         run: |
          cd skillcheck-internal
@@ -44,6 +54,9 @@ jobs:
          git push "https://x-access-token:${{ secrets.PAT }}@github.tools.sap/cloud-curriculum/skillcheck-internal.git" $BRANCH:$BRANCH -f
 
       - name: Install dependencies and run tests
-        run: npm ci && npm test
+        run: |
+          cd main
+          npm ci
+          npm test
 
 
