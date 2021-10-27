@@ -58,5 +58,19 @@ jobs:
           cd main
           npm ci
           npm test
+          
+      - name: Run smoke tests
+        run: |
+          cp main/fizz-buzz.js smoketests/
+          cd smoketests
+          npm ci
+          npm test
+        
+      - name: Clean Branch
+        if: always()
+        run: | 
+          BRANCH=`echo "$GITHUB_REF" | sed 's/refs\/heads\/*//'`
+          cd main
+          git push origin --delete $BRANCH
 
 
