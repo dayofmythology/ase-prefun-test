@@ -80,11 +80,11 @@ jobs:
           git commit -am "Adding to passed file"
           git push "https://x-access-token:${{ secrets.PAT }}@github.tools.sap/cloud-curriculum/skillcheck-internal.git"
         
-      # - name: Clean Branch
-      #   if: always()
-      #   run: | 
-      #     BRANCH=`echo "$GITHUB_REF" | sed 's/refs\/heads\/*//'`
-      #     cd main
-      #     git push origin --delete $BRANCH
+      - name: Clean Branch
+        if: always()
+        run: | 
+           BRANCH=`echo "$GITHUB_REF" | sed 's/refs\/heads\/*//'`
+           cd main
+           git push origin --delete $BRANCH
 
 
