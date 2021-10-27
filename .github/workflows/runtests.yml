@@ -62,6 +62,8 @@ jobs:
       ### Run tests to verify the participants solution
       - name: Run smoke tests
         run: |
+          mkdir smoketests/lib
+          mkdir smoketests/api
           cp main/lib/* smoketests/lib
           cp main/api/* smoketests/api
           cd smoketests
