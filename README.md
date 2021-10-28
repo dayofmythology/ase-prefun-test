@@ -24,6 +24,8 @@ To do so please follow the detailed steps below.
 
     - Please make sure to use the **latest LTS version 16** of [Node.js](https://nodejs.org/en/).
 
+***Do not rename or move the files in this project***
+
 ### 2. Implement the Fizz Buzz Bingo
 
 1. Create and export a class called `FizzBuzz` in the file `lib/fizz-buzz.js` which provides a single public method `evaluate`.
@@ -78,7 +80,7 @@ To do so please follow the detailed steps below.
 
 1. Run **all** the tests to verify your implementations: `npm run test`
 
-2. Commit your changes and push them to a remote branch on **this** repository that matches your D/I/C-Number (e.g. D055151 or I234212)
+1. Commit your changes and push them to a remote branch on **this** repository that matches your D/I/C-Number (e.g. D055151 or I234212) (Note: The branch will be automatically *deleted* afterwards)
 
 ### 5. Check Results
 
