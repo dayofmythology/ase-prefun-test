@@ -87,4 +87,4 @@ To do so please follow the detailed steps below.
 1. If the pipeline is successful (green) you passed, if it is red there were still some issues you need to fix.
 (repeat [4. Commit and Push to personal Branch](#4-commit-and-push-to-personal-branch) and check again)
 
-:octocat: *Happy Coding!** :octocat:
+:octocat: **Happy Coding** :octocat:
