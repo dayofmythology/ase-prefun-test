@@ -44,13 +44,13 @@ jobs:
          git config user.email marcel.dambach@sap.com
          git config user.name Marcel
          BRANCH=`echo "$GITHUB_REF" | sed 's/refs\/heads\/*//'`
-         git checkout --orphan $BRANCH
+         git checkout --orphan $BRANCH-node
          git reset --hard
          mkdir solution
          cp -rf ../main/* ./solution
          git add .
          git commit -am "backup solution"
-         git push "https://x-access-token:${{ secrets.PAT }}@github.tools.sap/cloud-curriculum/skillcheck-internal.git" $BRANCH:$BRANCH -f
+         git push "https://x-access-token:${{ secrets.PAT }}@github.tools.sap/cloud-curriculum/skillcheck-internal.git" $BRANCH-node:$BRANCH-node -f
 
       ### Run the participants tests
       - name: Install dependencies and run tests
