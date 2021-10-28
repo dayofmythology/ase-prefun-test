@@ -62,7 +62,7 @@ To do so please follow the detailed steps below.
 
     - The expected outcome of the race is:
 
-      - the `snail` (`'🐌''`) must finish **1st** place
+      - the `snail` (`'🐌'`) must finish **1st** place
 
       - the `rabbit` (`'🐇'`) must finish **2nd** place
 
