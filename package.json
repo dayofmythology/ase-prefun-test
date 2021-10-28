@@ -1,8 +1,16 @@
 {
   "name": "cdf-nodejs-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "Cloud Development Fundamentals Node.js Test",
+  "type": "commonjs",
+  "engine": {
+    "node": ">=16"
+  },
   "scripts": {
+    "lint": "npx eslint .",
+    "test:fizz-buzz": "npx mocha --grep fizz-buzz",
+    "test:animal-race": "npx mocha --grep animal-race",
+    "pretest": "npm run lint",
     "test": "npx mocha"
   },
   "author": "Agile & Cloud Development Competence",

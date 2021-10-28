@@ -13,7 +13,8 @@ describe('animal-race', function () {
     const result = await animalRace(animals)
     const end = Date.now()
     const time = end - start
-    assert.ok(time > minimal, `time: ${time}ms`)
+    assert.ok(time >= minimal, `time: ${time}ms`)
     assert.deepEqual(result, ['🐌', '🐇', '🐢'], `result: ${result}`)
   })
 })
+
