@@ -70,7 +70,7 @@ jobs:
           npm ci
           npm test
           
-        ### If the tests were successful add participant to "passed.csv" to indicate the skillcheck was successfully done
+        ### If the tests were successful add participant to "passed-fun-node.csv" to indicate the skillcheck was successfully done
       - name: Add to "passed" file
         run: |
           cd skillcheck-internal
@@ -78,7 +78,7 @@ jobs:
           git config user.name Marcel
           git checkout main
           BRANCH=`echo "$GITHUB_REF" | sed 's/refs\/heads\/*//'`
-          echo "$BRANCH,`date +"%d.%m.%Y-%T %Z"`" >> passed.csv
+          echo "$BRANCH,`date +"%d.%m.%Y-%T %Z"`" >> passed-fun-node.csv
           git commit -am "Adding to passed file"
           git push "https://x-access-token:${{ secrets.PAT }}@github.tools.sap/cloud-curriculum/skillcheck-internal.git"
         
