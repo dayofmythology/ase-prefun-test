@@ -2,6 +2,14 @@
 
 ## What do I need to do here?
 
+For this test you have to implement **two** games:
+
+- [Fizz Buzz Bingo](#2-implement-the-fizz-buzz-bingo)
+
+- [Animal Race](#3-implement-the-animal-race)
+
+To do so please follow the detailed steps below.
+
 ### 1. Clone Repository & Import
 
 1. Clone this repository to your local machine
