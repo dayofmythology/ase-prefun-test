@@ -1,4 +1,4 @@
-# Cloud Development Fundamentals Node.js Test
+# Cloud Development Fundamentals Prerequiste Test for Node.js
 
 ## What do I need to do here?
 
@@ -82,7 +82,7 @@ To do so please follow the detailed steps below.
 
 ### 5. Check Results
 
-1. After pushing to this repository as per the previous step, check https://github.tools.sap/cloud-curriculum/cdf-nodejs-test for a pipeline run with your D/I/C-Number.
+1. After pushing to this repository as per the previous step, check https://github.tools.sap/cloud-curriculum/fun-prerequisite-test-nodejs/actions for a pipeline run with your D/I/C-Number.
 
 1. If the pipeline is successful (green) you passed, if it is red there were still some issues you need to fix.
 (repeat [4. Commit and Push to personal Branch](#4-commit-and-push-to-personal-branch) and check again)
