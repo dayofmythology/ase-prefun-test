@@ -1,7 +1,7 @@
 {
-  "name": "cdf-nodejs-test",
+  "name": "fun-prerequisite-test-nodjes",
   "version": "1.0.0",
-  "description": "Cloud Development Fundamentals Node.js Test",
+  "description": "Cloud Development Fundamentals Prerequisite Test for Node.js",
   "type": "commonjs",
   "engine": {
     "node": ">=16"
