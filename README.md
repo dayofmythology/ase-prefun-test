@@ -1,5 +1,8 @@
 # Cloud Development Fundamentals Prerequiste Test for Node.js
 
+_Disclaimer: We are [counting page hits](https://github.wdf.sap.corp/cloud-native-dev/usage-tracker) using a cookie to distinguish returning & new visitors._
+<img src="https://cloud-native-dev-usage-tracker.cfapps.sap.hana.ondemand.com/pagehit/cc-cloud-dev-fundamentals/prerequisite-test-nodejs.png" alt="" height="1" width="1">
+
 ## What do I need to do here?
 
 For this prerequiste test you have to implement **two** small games:
