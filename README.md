@@ -27,7 +27,7 @@ To do so please follow the detailed steps below.
 
     - Please make sure to use the **latest LTS version 16** of [Node.js](https://nodejs.org/en/).
 
-***Do not rename or move the files in this project***
+:warning: ***Do not rename or move the files in this project*** :warning:
 
 ### 2. Implement the Fizz Buzz Bingo
 
@@ -54,7 +54,7 @@ To do so please follow the detailed steps below.
 
 1. Create sufficient tests cases for all of above scenarios in the provided `test/fizz-buzz.test.js` file using the **[mocha](https://mochajs.org)** test framework and the **[assert](https://nodejs.org/dist/latest-v16.x/docs/api/assert.html#assert)** module.
 
-1. Run the tests to verify your implementation: `npm run test:fizz-buzz`
+1. Run the tests :test_tube: to verify your implementation: `npm run test:fizz-buzz`
 
 ### 3. Implement the Animal Race
 1. Create and export a single function in file `lib/animal-race.js`.
@@ -77,11 +77,11 @@ To do so please follow the detailed steps below.
 
       **Hint**: *all* animals should run *concurrently*.
 
-1. Run the tests to verify your implementation: `npm run test:animal-race`
+1. Run the tests :test_tube: to verify your implementation: `npm run test:animal-race`
 
 ### 4. Commit and Push to personal Branch
 
-1. Run **all** the tests to verify your implementations: `npm run test`
+1. Run **all** the tests :test_tube: to verify your implementations: `npm run test`
 
 1. Commit your changes and push them to a remote branch on **this** repository that matches your D/I/C-Number (e.g. D055151 or I234212) (Note: The branch will be automatically *deleted* afterwards)
 
@@ -89,7 +89,7 @@ To do so please follow the detailed steps below.
 
 1. After pushing to this repository as per the previous step, check https://github.tools.sap/cloud-curriculum/fun-prerequisite-test-nodejs/actions for a pipeline run with your D/I/C-Number.
 
-1. If the pipeline is successful (green) you passed, if it is red there were still some issues you need to fix.
+1. If the pipeline is successful :white_check_mark: you passed, if it fails :x: there are still some issues you need to fix.
 (repeat [4. Commit and Push to personal Branch](#4-commit-and-push-to-personal-branch) and check again)
 
 :octocat: **Happy Coding** :octocat:
