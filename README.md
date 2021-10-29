@@ -100,7 +100,7 @@ In case of errors you will be. notified via email. Don't worry: You have as many
 
 The build will:
 - Run your tests
-- Add and run smoke tests that we provide, to make sure the implementation is correct ;-)
+- Add and run smoke tests that we provide, to make sure the implementation is correct :wink:
 - Delete your remote branch (the branch you pushed to this repo) no matter if the solution is correct or not</details>
 
 </details>
