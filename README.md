@@ -61,7 +61,7 @@ To do so please follow the detailed steps below.
 
     - the function must accept a single argument `animals`, which is the object exported from file `api/animals.js`
 
-    - the methods of `api/animals.js` will return the picture of the respective animal after a certain time (-> the time it takes for the animal to complete the race). For example `animals.rabbit()` returns `'🐇'` after 1 second.
+    - use the methods provided from `api/animals.js` to implement your race, e.g. calling `animals.rabbit()` will return a **[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)** which resolves with a string `'🐇'` after 1000 milliseconds (this is the time it takes for the `rabbit` to complete the race)
 
     - your function must return a **[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)** which resolves with an array of strings which represents the final placement of the animals competing in the race, e.g. `['🐇', '🐢', '🐌']`
 
