@@ -65,7 +65,7 @@ To do so please follow the detailed steps below.
 
     - your function must return a **[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)** which resolves with an array of strings which represents the final placement of the animals competing in the race, e.g. `['🐇', '🐢', '🐌']`
 
-    - However, the race is staged and the expected outcome of the race is:
+    - However, the race is **staged** and the expected outcome of the race is:
 
       - the `snail` (`'🐌'`) must finish **1st** place
 
