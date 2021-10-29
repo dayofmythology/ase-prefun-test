@@ -10,13 +10,13 @@ _Disclaimer: We are [counting page hits](https://github.wdf.sap.corp/cloud-nativ
     1. Fundamental Github usage
 1. Fundamental Terminal/Shell/CLI Skills (e.g. Bash, ZShell, GitBash...)
     1. How to navigate and see what's inside folders and files
-    1. How to copy and paste in a terminal
     1. How to execute scripts
 1. Basic Node.js Skills 
-    1. Proficiency in writing code in Node.js from scratch 
+    1. Proficiency in writing code in Node.js from scratch
+    1. Basic understanding on how to install, manage and work with node modules/dependencies
     1. Good understanding of Async Programming, Fundamental Language Constructs, and OOO e.g. [Promises (async/await)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), Data-Structures, Classes
 1. Testing
-    1. Good understanding in writing meaningful tests using test runners like Mocha/Jasmine/Jest, ...
+    1. Good understanding in writing meaningful tests using test runners like [Mocha](https://mochajs.org/)/[Jasmine](https://jasmine.github.io/setup/nodejs.html)/[Jest](https://jestjs.io/), ...
   
 
 ## Learning Resources
