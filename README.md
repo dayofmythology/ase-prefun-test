@@ -3,12 +3,28 @@
 _Disclaimer: We are [counting page hits](https://github.wdf.sap.corp/cloud-native-dev/usage-tracker) using a cookie to distinguish returning & new visitors._
 <img src="https://cloud-native-dev-usage-tracker.cfapps.sap.hana.ondemand.com/pagehit/cc-cloud-dev-fundamentals/prerequisite-test-nodejs/1x1.png" alt="" height="1" width="1">
 
-## What do I need to do here?
+## 🎯 Why?
+Cloud Development Fundamentals (Java) is a training for Development roles which have good knowledge in Java and its ecosystem.
+This little test, that should not take much time for a skilled programmer, gives you a first feedback if you have the required knowledge and skills to attend the training.
+
+
+## 🤔 What if I don't know what to do or can't solve it?
+If you don't have all the skills yet don't worry, [you can learn them](https://github.tools.sap/cloud-curriculum/fun-prerequisite-test-nodejs/blob/main/SkillsAndResources.md#learning-resources). Have a look at the [prerequisites list](https://github.tools.sap/cloud-curriculum/fun-prerequisite-test-nodejs/blob/main/SkillsAndResources.md#required-skillsknowledge) and [learn the knowledge and skills you are still missing](https://github.tools.sap/cloud-curriculum/fun-prerequisite-test-nodejs/blob/main/SkillsAndResources.md#learning-resources).
+
+## 🛠️ Technical Prerequisites
+For this exercise you will require the following tools:
+
+- IDE, we recommend [Visual Studio Code](https://code.visualstudio.com/) with [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) and [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extensions.
+- [Node.js](https://nodejs.org/en/) Please make sure to use the **latest LTS version 16**
+- [Git client](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+## 📗 Exercise/Test
+
+### What do I need to do here?
 
 For this prerequiste test you have to implement **two** small games:
 
 - [Fizz Buzz Bingo](#2-implement-the-fizz-buzz-bingo)
-
 - [Animal Race](#3-implement-the-animal-race)
 
 To do so please follow the detailed steps below.
@@ -16,16 +32,8 @@ To do so please follow the detailed steps below.
 ### 1. Clone Repository & Import
 
 1. Clone this repository to your local machine
-
-1. Import this project into your IDE
-
-    - We recommend [Visual Studio Code](https://code.visualstudio.com/) with [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) and [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extensions.
-
-    - But feel free to use the IDE of your choice.
-
+1. Open it in your preferred IDE
 1. Install the development dependencies
-
-    - Please make sure to use the **latest LTS version 16** of [Node.js](https://nodejs.org/en/).
 
 :warning: ***Do not rename or move the files in this project*** :warning:
 
@@ -86,10 +94,22 @@ To do so please follow the detailed steps below.
 1. Commit your changes and push them to a remote branch on **this** repository that matches your D/I/C-Number (e.g. D055151 or I234212) (Note: The branch will be automatically *deleted* afterwards)
 
 ### 5. Check Results
+After pushing to this repository as per the previous step, a build will be triggered that takes ~2 minutes to finish.
+In case of errors you will be. notified via email. Don't worry: You have as many attempts as you need!
+<details><summary>What exactly does the build do?</summary>
 
-1. After pushing to this repository as per the previous step, check https://github.tools.sap/cloud-curriculum/fun-prerequisite-test-nodejs/actions for a pipeline run with your D/I/C-Number.
+The build will:
+- Run your tests
+- Add and run smoke tests that we provide, to make sure the implementation is correct ;-)
+- Delete your remote branch (the branch you pushed to this repo) no matter if the solution is correct or not</details>
 
-1. If the pipeline is successful :white_check_mark: you passed, if it fails :x: there are still some issues you need to fix.
-(repeat [4. Commit and Push to personal Branch](#4-commit-and-push-to-personal-branch) and check again)
+</details>
+
+1. Check the [outcome of the build here](https://github.tools.sap/cloud-curriculum/fun-prerequisite-test-nodejs/actions). There should be a pipeline run with your UserId (since it is the branch name) and your commit message.
+1. If the pipeline is successful :white_check_mark: you passed, if it fails :x: there are still some issues you need to fix - in this case check the pipeline logs for the reason.
+(after fixing repeat [4. Commit and Push to Personal Branch](#4-commit-and-push-to-personal-branch) and check again)
+
+## 📣 Questions/Feedback
+We value your feedback and your questions, and please use [the slack channel #fundamentals-prerequisite-test](https://sap-cloud-enablement.slack.com/archives/C02KFC2UAFN) to let us know!
 
 :octocat: **Happy Coding** :octocat:
