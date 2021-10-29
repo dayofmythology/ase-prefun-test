@@ -4,7 +4,7 @@ _Disclaimer: We are [counting page hits](https://github.wdf.sap.corp/cloud-nativ
 <img src="https://cloud-native-dev-usage-tracker.cfapps.sap.hana.ondemand.com/pagehit/cc-cloud-dev-fundamentals/prerequisite-test-nodejs/1x1.png" alt="" height="1" width="1">
 
 ## 🎯 Why?
-Cloud Development Fundamentals (Java) is a training for Development roles which have good knowledge in Java and its ecosystem.
+Cloud Development Fundamentals (Node.js) is a training for Development roles which have good knowledge in Node.js and its ecosystem.
 This little test, that should not take much time for a skilled programmer, gives you a first feedback if you have the required knowledge and skills to attend the training.
 
 
