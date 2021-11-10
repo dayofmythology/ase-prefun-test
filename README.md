@@ -64,6 +64,8 @@ To do so please follow the detailed steps below.
 
 1. Run the tests :test_tube: to verify your implementation: `npm run test:fizz-buzz`
 
+    *Running the tests will also check for a :100: percent code coverage and will fail if the coverage is below the required threshold.*
+
 ### 3. Implement the Animal Race
 1. Create and export a single function in file `lib/animal-race.js`.
 
@@ -87,9 +89,13 @@ To do so please follow the detailed steps below.
 
 1. Run the tests :test_tube: to verify your implementation: `npm run test:animal-race`
 
+    *Running the tests will also check for a :100: percent code coverage and will fail if the coverage is below the required threshold.*
+
 ### 4. Commit and Push to personal Branch
 
 1. Run **all** the tests :test_tube: to verify your implementations: `npm run test`
+
+    *Make sure to have a :100: percent coverage and no uncovered lines.*
 
 1. Go to https://fun-onboarding.internal.cfapps.sap.hana.ondemand.com/ (SAP NETWORK ONLY), enter your D/I/C-Number, and select `JavaScript(Node.js)`. Then press submit to gain write permissions on the repository.
 
