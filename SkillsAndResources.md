@@ -32,7 +32,7 @@ _Disclaimer: We are [counting page hits](https://github.wdf.sap.corp/cloud-nativ
 
 ### Node.js Language
 - [Node.js: Getting Started](https://app.pluralsight.com/library/courses/nodejs-getting-started/table-of-contents)
-
+- [JavaScript Promises and Async Programming](https://app.pluralsight.com/library/courses/javascript-promises-async-programming/table-of-contents)
 ### Testing
 - [Testing Javascript for Node.js with Mocha](https://app.pluralsight.com/library/courses/mocha-javascript-testing-nodejs/table-of-contents)
 
