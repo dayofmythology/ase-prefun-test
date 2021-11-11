@@ -43,6 +43,8 @@ To do so please follow the detailed steps below.
 
 1. The `evaluate` method must accept a single argument of type `number`.
 
+    If any other type than `number` is passed as argument, the method should throw an error with message `"Invalid argument"`.
+
 1. The `evaluate` method must behave as follows:
 
     - In case number is divisible by 3, the string `"Fizz"` should be returned.
