@@ -4,18 +4,23 @@ _Disclaimer: We are [counting page hits](https://github.wdf.sap.corp/cloud-nativ
 <img src="https://cloud-native-dev-usage-tracker.cfapps.sap.hana.ondemand.com/pagehit/cc-cloud-dev-fundamentals/prerequisite-test-nodejs/1x1.png" alt="" height="1" width="1">
 
 ## 🎯 Why?
+
 Cloud Development Fundamentals (Node.js) is a training for Development roles which have good knowledge in Node.js and its ecosystem.
 This little test, that should not take much time for a skilled programmer, gives you a first feedback if you have the required knowledge and skills to attend the training.
 
-
 ## 🤔 What if I don't know what to do or can't solve it?
+
 If you don't have all the skills yet don't worry, [you can learn them](https://github.tools.sap/cloud-curriculum/fun-prerequisite-test-nodejs/blob/main/SkillsAndResources.md#learning-resources). Have a look at the [prerequisites list](https://github.tools.sap/cloud-curriculum/fun-prerequisite-test-nodejs/blob/main/SkillsAndResources.md#required-skillsknowledge) and [learn the knowledge and skills you are still missing](https://github.tools.sap/cloud-curriculum/fun-prerequisite-test-nodejs/blob/main/SkillsAndResources.md#learning-resources).
 
 ## 🛠️ Technical Prerequisites
+
 For this exercise you will require the following tools:
 
 - IDE, we recommend [Visual Studio Code](https://code.visualstudio.com/) with [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) and [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extensions.
 - [Node.js](https://nodejs.org/en/) Please make sure to use the **latest LTS version 16**
+
+  - If you need to manage multiple versions of `node` &/or `npm`, consider using a [Node Version Manager](https://github.com/npm/cli#node-version-managers) or running in a [Development Container](https://code.visualstudio.com/docs/remote/create-dev-container#_automate-dev-container-creation) using the [VS Code Remote - Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+
 - [Git client](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 ## 📗 Exercise/Test
@@ -69,6 +74,7 @@ To do so please follow the detailed steps below.
     *Running the tests will also check for a :100: percent code coverage and will fail if the coverage is below the required threshold.*
 
 ### 3. Implement the Animal Race
+
 1. Create and export a single function in file `lib/animal-race.js`.
 
     - the function must accept a single argument `animals`, which is the object exported from file `api/animals.js`
@@ -104,11 +110,13 @@ To do so please follow the detailed steps below.
 1. Commit your changes and push them to a remote branch on **this** repository that matches your D/I/C-Number (e.g. D055151 or I234212) (Note: The branch will be automatically *deleted* afterwards)
 
 ### 5. Check Results
+
 After pushing to this repository as per the previous step, a build will be triggered that takes ~2 minutes to finish.
 In case of errors you will be. notified via email. Don't worry: You have as many attempts as you need!
 <details><summary>What exactly does the build do?</summary>
 
 The build will:
+
 - Run your tests
 - Add and run smoke tests that we provide, to make sure the implementation is correct :wink:
 - Delete your remote branch (the branch you pushed to this repo) no matter if the solution is correct or not</details>
@@ -120,6 +128,7 @@ The build will:
 (after fixing repeat [4. Commit and Push to Personal Branch](#4-commit-and-push-to-personal-branch) and check again)
 
 ## 📣 Questions/Feedback
+
 We value your feedback and your questions, and please use [the slack channel #fundamentals-prerequisite-test](https://sap-cloud-enablement.slack.com/archives/C02KFC2UAFN) to let us know!
 
 :octocat: **Happy Coding** :octocat:
