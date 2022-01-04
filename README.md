@@ -48,7 +48,7 @@ To do so please follow the detailed steps below.
 
 1. The `evaluate` method must accept a single argument of type `number`.
 
-    If any other type than `number` is being passed as argument, the method should `throw a generic [Error](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error) with message `"Invalid argument"`.
+    If any other type than `number` is being passed as argument, the method should `throw` a generic [Error](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error) with message `"Invalid argument"`.
 
 1. The `evaluate` method must behave as follows:
 
