@@ -7,11 +7,11 @@
     "node": ">=16"
   },
   "scripts": {
-    "lint": "npx eslint .",
-    "test:fizz-buzz": "npx nyc --check-coverage --lines 100 --functions 100 --branches 100 mocha --ignore test/animal-race.test.js",
-    "test:animal-race": "npx nyc --check-coverage --lines 100 --functions 100 --branches 100 mocha --ignore test/fizz-buzz.test.js",
+    "lint": "eslint .",
+    "test:fizz-buzz": "nyc --check-coverage --lines 100 --functions 100 --branches 100 mocha --ignore test/animal-race.test.js",
+    "test:animal-race": "nyc --check-coverage --lines 100 --functions 100 --branches 100 mocha --ignore test/fizz-buzz.test.js",
     "pretest": "npm run lint",
-    "test": "npx nyc --check-coverage --lines 100 --functions 100 --branches 100 mocha"
+    "test": "nyc --check-coverage --lines 100 --functions 100 --branches 100 mocha"
   },
   "author": "Agile & Cloud Development Competence",
   "license": "SAP SE",
