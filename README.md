@@ -105,11 +105,13 @@ To do so please follow the detailed steps below.
 
     *Make sure to have a :100: percent coverage and no uncovered lines.*
 
-1. Go to https://fun-onboarding.internal.cfapps.sap.hana.ondemand.com/ (SAP NETWORK ONLY), enter your D/I/C-Number, and select `Node.js`. 
+1. Go to https://fun-onboarding.internal.cfapps.sap.hana.ondemand.com/ (SAP NETWORK ONLY). 
 
-    Then press submit to **gain write permissions on the repository**.
+    - Enter your `C/D/I-Number`, and select *Programming Language*: `Node.js`. 
 
-1. Commit your changes and push them to a remote branch on **this** repository that matches your D/I/C-Number (e.g. d055151 or i234212) 
+    - Then press `Register` to **gain write permissions on this repository**.
+
+1. Commit your changes and push them to a **remote branch** on **this repository** that matches your `C/D/I-Number` (e.g. d055151 or i234212) 
 
     (Note: The branch will be automatically *deleted* afterwards, otherwise you could see each others solutions :trollface:)
 
