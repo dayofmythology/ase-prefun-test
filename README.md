@@ -35,6 +35,7 @@ For this prerequiste test you have to implement **two** small games:
 To do so please follow the detailed steps below.
 
 ### 1. Clone Repository & Import
+🛑 **Please do NOT FORK, and do NOT OPEN PULL REQUESTS on this repo!**
 
 1. Clone this repository to your local machine
 1. Open it in your preferred IDE
