@@ -66,6 +66,7 @@ jobs:
           mkdir smoketests/api
           cp main/lib/* smoketests/lib
           cp main/api/* smoketests/api
+          cp main/checksum smoketests/checksum
           cd smoketests
           npm ci
           npm test
