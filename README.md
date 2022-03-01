@@ -22,15 +22,17 @@ For this exercise you will require the following tools:
   - If you need to manage multiple versions of `node` &/or `npm`, consider using a [Node Version Manager](https://github.com/npm/cli#node-version-managers) or running in a [Development Container](https://code.visualstudio.com/docs/remote/create-dev-container#_automate-dev-container-creation) using the [VS Code Remote - Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
 - [Git client](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- [Docker](https://docs.docker.com/engine/install/)
 
 ## 📗 Exercise/Test
 
 ### What do I need to do here?
 
-For this prerequiste test you have to implement **two** small games:
+For this prerequiste test you have to implement **two** small games and generate a checksum file:
 
 - [Fizz Buzz Bingo](#2-implement-the-fizz-buzz-bingo)
 - [Animal Race](#3-implement-the-animal-race)
+- [Checksum](#4-generate-the-checksum-file)
 
 To do so please follow the detailed steps below.
 
@@ -100,23 +102,31 @@ To do so please follow the detailed steps below.
 
     *Running the tests will also check for a :100: percent code coverage and will fail if the coverage is below the required threshold.*
 
-### 4. Commit and Push to personal Branch
+### 4. Generate the checksum file
+
+In this step, simply run
+```sh
+npm run create-checksum
+```
+This will create a `checksum` file containing a hash. Leave it as it is - but don't forget to add it to your commit.
+
+### 5. Commit and Push to personal Branch
 
 1. Run **all** the tests :test_tube: to verify your implementations: `npm run test`
 
     *Make sure to have a :100: percent coverage and no uncovered lines.*
 
-1. Go to https://fun-onboarding.internal.cfapps.sap.hana.ondemand.com/ (SAP NETWORK ONLY). 
+1. Go to https://fun-onboarding.internal.cfapps.sap.hana.ondemand.com/ (SAP NETWORK ONLY).
 
-    - Enter your `C/D/I-Number`, and select *Programming Language*: `Node.js`. 
+    - Enter your `C/D/I-Number`, and select *Programming Language*: `Node.js`.
 
     - Then press `Register` to **gain write permissions on this repository**.
 
-1. Commit your changes and push them to a **remote branch** on **this repository** that matches your `C/D/I-Number` (e.g. d055151 or i234212) 
+1. Commit your changes and push them to a **remote branch** on **this repository** that matches your `C/D/I-Number` (e.g. d055151 or i234212)
 
     (Note: The branch will be automatically *deleted* afterwards, otherwise you could see each others solutions :trollface:)
 
-### 5. Check Results
+### 6. Check Results
 
 After pushing to this repository as per the previous step, a build will be triggered that takes ~2 minutes to finish.
 In case of errors you will be. notified via email. Don't worry: You have as many attempts as you need!
@@ -132,7 +142,7 @@ The build will:
 
 1. Check the [outcome of the build here](https://github.tools.sap/cloud-curriculum/fun-prerequisite-test-nodejs/actions). There should be a pipeline run with your UserId (since it is the branch name) and your commit message.
 1. If the pipeline is successful :white_check_mark: you passed, if it fails :x: there are still some issues you need to fix - in this case check the pipeline logs for the reason.
-(after fixing repeat [4. Commit and Push to Personal Branch](#4-commit-and-push-to-personal-branch) and check again)
+(after fixing repeat [4. Commit and Push to Personal Branch](#5-commit-and-push-to-personal-branch) and check again)
 
 ## 📣 Questions/Feedback
 
