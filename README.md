@@ -108,7 +108,7 @@ In this step, simply run
 ```sh
 npm run create-checksum
 ```
-This will create a checksum file containing a hash. Leave it as it is - don't forget to add it to your commit.
+This will create a `checksum` file containing a hash. Leave it as it is - but don't forget to add it to your commit.
 
 ### 5. Commit and Push to personal Branch
 
