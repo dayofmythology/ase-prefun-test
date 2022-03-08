@@ -37,6 +37,7 @@ For this prerequiste test you have to implement **two** small games and generate
 To do so please follow the detailed steps below.
 
 ### 1. Clone Repository & Import
+
 🛑 **Please do NOT FORK, and do NOT OPEN PULL REQUESTS on this repo!**
 
 1. Clone this repository to your local machine
@@ -47,7 +48,7 @@ To do so please follow the detailed steps below.
 
 ### 2. Implement the Fizz Buzz Bingo
 
-1. Create and export a class called `FizzBuzz` in the file `lib/fizz-buzz.js` which provides a single public method `evaluate`.
+1. Create and export (default) a class called `FizzBuzz` in the file `lib/fizz-buzz.js` which provides a single public method `evaluate`.
 
 1. The `evaluate` method must accept a single argument of type `number`.
 
@@ -74,11 +75,11 @@ To do so please follow the detailed steps below.
 
 1. Run the tests :test_tube: to verify your implementation: `npm run test:fizz-buzz`
 
-    *Running the tests will also check for a :100: percent code coverage and will fail if the coverage is below the required threshold.*
+    _Running the tests will also check for a :100: percent code coverage and will fail if the coverage is below the required threshold._
 
 ### 3. Implement the Animal Race
 
-1. Create and export a single function in file `lib/animal-race.js`.
+1. Create and export (default) a single function in file `lib/animal-race.js`.
 
     - the function must accept a single argument `animals`, which is the object exported from file `api/animals.js`
 
@@ -96,35 +97,37 @@ To do so please follow the detailed steps below.
 
     - Additionally the race **must not take longer than 3000 milliseconds** (plus a few millisenconds computing overhead).
 
-      **Hint**: *all* animals should run *concurrently*.
+      **Hint**: _all_ animals should run _concurrently_.
 
 1. Run the tests :test_tube: to verify your implementation: `npm run test:animal-race`
 
-    *Running the tests will also check for a :100: percent code coverage and will fail if the coverage is below the required threshold.*
+    _Running the tests will also check for a :100: percent code coverage and will fail if the coverage is below the required threshold._
 
 ### 4. Generate the checksum file
 
 In this step, simply run
+
 ```sh
 npm run create-checksum
 ```
+
 This will create a `checksum` file containing a hash. Leave it as it is - but don't forget to add it to your commit.
 
 ### 5. Commit and Push to personal Branch
 
 1. Run **all** the tests :test_tube: to verify your implementations: `npm run test`
 
-    *Make sure to have a :100: percent coverage and no uncovered lines.*
+    _Make sure to have a :100: percent coverage and no uncovered lines._
 
-1. Go to https://fun-onboarding.internal.cfapps.sap.hana.ondemand.com/ (SAP NETWORK ONLY).
+1. Go to <https://fun-onboarding.internal.cfapps.sap.hana.ondemand.com/> (SAP NETWORK ONLY).
 
-    - Enter your `C/D/I-Number`, and select *Programming Language*: `Node.js`.
+    - Enter your `C/D/I-Number`, and select _Programming Language_: `Node.js`.
 
     - Then press `Register` to **gain write permissions on this repository**.
 
 1. Commit your changes and push them to a **remote branch** on **this repository** that matches your `C/D/I-Number` (e.g. d055151 or i234212)
 
-    (Note: The branch will be automatically *deleted* afterwards, otherwise you could see each others solutions :trollface:)
+    (Note: The branch will be automatically _deleted_ afterwards, otherwise you could see each others solutions :trollface:)
 
 ### 6. Check Results
 

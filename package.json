@@ -2,9 +2,10 @@
   "name": "fun-prerequisite-test-nodjes",
   "version": "1.0.0",
   "description": "Cloud Development Fundamentals Prerequisite Test for Node.js",
-  "type": "commonjs",
+  "type": "module",
   "engine": {
-    "node": ">=16"
+    "node": ">=16",
+    "npm": ">=8"
   },
   "scripts": {
     "lint": "eslint .",
@@ -20,6 +21,6 @@
     "eslint": "^8.1.0",
     "mocha": "^9.2.1",
     "nyc": "^15.1.0",
-    "sinon": "^11.1.2"
+    "sinon": "^13.0.1"
   }
 }
