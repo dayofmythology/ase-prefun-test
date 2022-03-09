@@ -1,4 +1,4 @@
-const assert = require('assert/strict')
+import assert from 'assert/strict'
 import FizzBuzz from '../lib/fizz-buzz.js'
 
 describe('fizz-buzz', function () {
