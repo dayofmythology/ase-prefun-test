@@ -1,5 +1,5 @@
 const assert = require('assert/strict')
-const FizzBuzz = require('../lib/fizz-buzz')
+import FizzBuzz from '../lib/fizz-buzz.js'
 
 describe('fizz-buzz', function () {
   it('example failing test', () => {

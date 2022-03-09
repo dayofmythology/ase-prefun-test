@@ -12,7 +12,8 @@
  */
 import assert from 'assert/strict'
 import sinon from 'sinon'
-import { animals, animalRace } from '../index.js'
+import animals from '../api/animals.js'
+import animalRace from '../lib/animal-race.js'
 
 const minimal = 3000
 const overhead = 500
