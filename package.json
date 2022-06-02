@@ -9,18 +9,18 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test:fizz-buzz": "nyc --check-coverage --lines 100 --functions 100 --branches 100 mocha --ignore test/animal-race.test.js",
-    "test:animal-race": "nyc --check-coverage --lines 100 --functions 100 --branches 100 mocha --ignore test/fizz-buzz.test.js",
+    "test:fizz-buzz": "c8 --check-coverage --lines 100 --functions 100 --branches 100 mocha --ignore test/animal-race.test.js",
+    "test:animal-race": "c8 --check-coverage --lines 100 --functions 100 --branches 100 mocha --ignore test/fizz-buzz.test.js",
     "pretest": "npm run lint",
-    "test": "nyc --check-coverage --lines 100 --functions 100 --branches 100 mocha",
+    "test": "c8 --check-coverage --lines 100 --functions 100 --branches 100 mocha",
     "create-checksum": "docker build -t fun-prerequisite/checksum . &&  docker run -a stdout fun-prerequisite/checksum > checksum"
   },
   "author": "Agile & Cloud Development Competence",
   "license": "SAP SE",
   "devDependencies": {
+    "c8": "^7.11.3",
     "eslint": "^8.1.0",
     "mocha": "^9.2.1",
-    "nyc": "^15.1.0",
     "sinon": "^13.0.1"
   }
 }
