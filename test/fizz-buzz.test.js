@@ -44,6 +44,8 @@ describe('fizz-buzz', () => {
         assert.strictEqual(fizzBuzz.evaluate(10), "BuzzBingo");
         assert.strictEqual(fizzBuzz.evaluate(15), "FizzBuzz");
         assert.strictEqual(fizzBuzz.evaluate(30), "FizzBuzzBingo");
+        assert.strictEqual(fizzBuzz.evaluate(7),"7");
+        assert.strictEqual(fizzBuzz.evaluate(7),"7Bingo");
     });
 
     it('should throw an error when input is not a number', () => {
